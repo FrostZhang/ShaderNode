@@ -1,0 +1,5 @@
+//重映射
+float Remap(float oldrangea,float oldrangeb,float newrangea,float newrangeb,float value)
+{
+	return (val-oa)/(ob-oa) * (nb-na) + na;
+}

@@ -45,4 +45,3 @@ fixed circle(fixed2 uv, fixed2 center, fixed radius, fixed width)
 					fixed3 hcol = fixed3(1.0,0.5*r,0.3)*s;
 	
 					fixed3 col = lerp( bg, hcol, smoothstep( -0.01, 0.01, d-r) );
-					

@@ -45,3 +45,6 @@ fixed circle(fixed2 uv, fixed2 center, fixed radius, fixed width)
 					fixed3 hcol = fixed3(1.0,0.5*r,0.3)*s;
 	
 					fixed3 col = lerp( bg, hcol, smoothstep( -0.01, 0.01, d-r) );
+//棋盘
+				fixed2 uv3 = floor((i.uv-0.5)*5)/2;
+				fixed qipan = frac(uv3.x+uv3.y)*2;

@@ -1,0 +1,14 @@
+//圆 radius最大0.5 width最大也为0.5
+#define SMOOTH(r,R) (.01-smoothstep(R-.01,R+.01, r))
+fixed circle(fixed2 uv, fixed2 center, fixed radius, fixed width)
+{
+		fixed r = length(uv - center);
+		return SMOOTH(r-width/2.0,radius)-SMOOTH(r+width/2.0,radius);
+}
+
+//直线 x<0.5 x>-0.5
+#define LINE(a,b,x) ( smoothstep(a-.01,a+.01,x)*(1-smoothstep(b-.01,b+.01,x)) )
+// LINE(0,0.01,uv.x-c.x-_Offset) *fixed4(1,0,0,1)  // uvx  就是竖线   nvy就是横线
+
+//直线 同上
+#define RANGE(a,b,x) ( step(a,x)*(1.0-step(b,x)) )

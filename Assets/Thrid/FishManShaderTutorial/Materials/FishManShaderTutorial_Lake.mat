@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FishManShaderTutorial_Lake
+  m_Shader: {fileID: 4800000, guid: 6b1b0fd1aba53974b9c7e39bebf71352, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - waterHeight: 0.5
+    m_Colors:
+    - _BaseWaterColor: {r: 0.019463668, g: 0.26645085, b: 0.33088237, a: 0}
+    - _FogCol: {r: 0.025, g: 0.2, b: 0.125, a: 0}
+    - _FogHighRange: {r: -5, g: 10, b: 0, a: 0.5}
+    - _FogSpd: {r: 1, g: 0, b: 0, a: 0.5}
+    - _LightWaterColor: {r: 0.40408736, g: 0.74264705, b: 0.59755003, a: 0}
+    - _LoopNum: {r: 15, g: 9, b: 3, a: 512}
+    - lightDir: {r: -0.8, g: 0.6, b: 0, a: 0}

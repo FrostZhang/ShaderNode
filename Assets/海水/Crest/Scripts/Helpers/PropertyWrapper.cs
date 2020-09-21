@@ -45,7 +45,7 @@ namespace Crest
         public void SetVector(int param, Vector4 value) { materialPropertyBlock.SetVector(param, value); }
         public void SetVectorArray(int param, Vector4[] value) { materialPropertyBlock.SetVectorArray(param, value); }
         public void SetMatrix(int param, Matrix4x4 value) { materialPropertyBlock.SetMatrix(param, value); }
-        public void SetInt(int param, int value) { materialPropertyBlock.SetInt(param, value); }
+        public void SetInt(int param, int value) { materialPropertyBlock.SetFloat(param, value); }
 
         public MaterialPropertyBlock materialPropertyBlock { get; private set; }
     }
